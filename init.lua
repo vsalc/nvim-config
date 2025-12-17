@@ -77,7 +77,7 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
-local config = require("nvim-treesitter.configs")
+local config = require("nvim-treesitter")
 config.setup({
   ensure_installed = {"lua", "rust"},
   highlight = { enable = true },
